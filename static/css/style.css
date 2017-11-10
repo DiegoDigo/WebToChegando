@@ -1,0 +1,47 @@
+* {
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.princ {
+    height: 100vh;
+    display: table !important;
+    width: 100%;
+    background-color:rgb(255,139,0);    
+}
+
+.content {
+    color: #000000;    
+    display: table-cell;
+    text-align: center ;
+    vertical-align: middle;     
+}
+
+.scholl-input {
+    margin-top: 5px !important;
+    width: 45% !important;
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 0 15px 0 15px !important;    
+    color:black;
+}
+
+.btn-scholl {
+    margin: 15px !important;
+    background:#45981B ;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;    
+    font-size: 20px;    
+    padding: 4px 55px !important; 
+    border: 1px solid #45981B;   
+}
+
+
+@media (max-width: 600px){
+    .scholl-input {        
+        margin-top: .5em !important;
+        width: 18em !important;                
+    }
+}
