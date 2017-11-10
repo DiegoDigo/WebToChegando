@@ -38,10 +38,25 @@
     border: 1px solid #45981B;   
 }
 
+.navbar-fixed {
+    position: absolute;
+    z-index:999999999;
+}
+
+.teste{
+    height: 100vh;
+}
+
+.orange-menu{
+  background-color:rgb(255,139,0) !important; 
+}
+
 
 @media (max-width: 600px){
     .scholl-input {        
         margin-top: .5em !important;
-        width: 18em !important;                
+        width: 18em !important;               
     }
 }
+
+

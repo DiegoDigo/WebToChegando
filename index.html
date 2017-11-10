@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./bower_components/materialize/dist/css/materialize.css">
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>ToChegando</title>
 </head>
 <body>
+        <div class="navbar-fixed">
+            <nav id="menu" class="transparent z-depth-0">
+                 <div class="container">
+                        <div class="nav-wrapper">
+                                <div class="row">
+                                  <div class="col s12">
+                                    <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                                    <a href="https://codepen.io/collection/nbBqgY/" class="brand-logo" target="_blank">Materialize Framework</a>
+                                    <ul class="right hide-on-med-and-down">
+                                      <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Sass</a></li>
+                                      <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Components</a></li>
+                                      <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">JavaScript</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <ul class="side-nav" id="mobile-demo">
+                                  <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Sass</a></li>
+                                  <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Components</a></li>
+                                  <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Javascript</a></li>
+                                  <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Mobile</a></li>
+                                </ul>
+                              </div>
+                 </div>                  
+                </nav>
+              </div>   
    <div class="container-fluid princ">
        <div class="row content">           
             <h1>Teste</h1>            
             <input type="text" name="scholl" id="scholl" class="scholl-input">
             <br>
-            <button class="btn-scholl">texte</button>
+            <button class="btn-scholl" id="send">texte</button>
        </div>
    </div>
+   <div id="ancora" class="container teste">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus sapiente expedita numquam officia! Expedita unde saepe minima. Rem fugit sequi minima placeat repudiandae nihil magnam sunt neque aliquid iste.</p>
+   </div>
+   <script>
+      const btn = document.getElementById('send');
+      
+      btn.addEventListener('click', function send () {
+        window.location.href="#ancora";        
+        var nav = document.getElementById("menu");
+        nav.classList.remove('transparent','z-depth-0');
+        nav.classList.add('orange-menu');
+      });
+
+      window.addEventListener('scroll', function rolar() {          
+        var nav = document.getElementById("menu");
+        if (scrollY <= 0){            
+            nav.classList.remove('orange-menu');
+            nav.classList.add('transparent','z-depth-0');            
+        }else{
+            nav.classList.remove('transparent','z-depth-0');
+            nav.classList.add('orange-menu');
+        }
+      });
+   </script>
 </body>
 </html>
