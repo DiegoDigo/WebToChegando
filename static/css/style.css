@@ -45,12 +45,27 @@ body {
 
 .teste{
     height: 100vh;
+    padding:5% 8% 0% 8%;    
 }
 
 .orange-menu{
   background-color:rgb(255,139,0) !important; 
 }
 
+.content-card {
+    color: #004525;    
+    display: table-cell;
+    text-align: center ;
+    vertical-align: middle;     
+}
+
+.card-img{
+    max-height:250px;
+}
+
+.teste-houver:hover{
+  box-shadow: 2px black;
+}
 
 @media (max-width: 600px){
     .scholl-input {        
